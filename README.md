@@ -3,7 +3,7 @@
 
 
 ```shell
-docker build -t my_dm_build -f ./src/Dockerfile_orig .
+docker build -t my_dm_build -f ./src/Dockerfile .
 docker run -it -p 8055:3939 \
     -w /usr/share/edm \
     -v "$(pwd)/prod/logs:/usr/share/edm/Logs" \
